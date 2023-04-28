@@ -4,14 +4,15 @@ import { ContainerWrapper } from '../Container/Container.styled';
 
 export const HeaderBox = styled.header`
   /* position: fixed; */
-  height: 100px;
+  height: 98px;
   background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: black; */
   padding: 22px 22px 0 22px;
 
   @media screen and (min-width: 768px) {
     padding: 16px 32px 0 16px;
 
-    height: 70px;
+    height: 54px;
   }
 
   @media screen and (min-width: 1360px) {
