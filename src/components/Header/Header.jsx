@@ -1,31 +1,40 @@
-import { NavLink } from './Header.styled';
+import Logo from '../Logo/Logo';
+
+import {
+  Container,
+  HeaderBox,
+  Navigation,
+  NavList,
+  NavItem,
+  NavLink,
+} from './Header.styled';
 
 const Header = () => {
   return (
-    <header id="home">
-      <p>
-        <span>Finanse</span> Ledger
-      </p>
-      <nav>
-        <ul>
-          <li>
-            <NavLink href="#home">Home</NavLink>
-          </li>
-          <li>
-            <NavLink href="#about">About</NavLink>
-          </li>
-          <li>
-            <NavLink href="#cases">Cases</NavLink>
-          </li>
-          <li>
-            <NavLink href="#blog">Blog</NavLink>
-          </li>
-          <li>
-            <NavLink href="#contact">Contact</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <HeaderBox id="home">
+      <Container>
+        <Logo />
+        <Navigation>
+          <NavList>
+            <NavItem>
+              <NavLink href="#home">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#about">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#cases">Cases</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#blog">Blog</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#contact">Contact</NavLink>
+            </NavItem>
+          </NavList>
+        </Navigation>
+      </Container>
+    </HeaderBox>
   );
 };
 
