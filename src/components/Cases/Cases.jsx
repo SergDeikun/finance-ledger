@@ -56,7 +56,7 @@ const Cases = () => {
               <source srcSet={Img1w} type="image/webp" />
               <source srcSet={Img1x2j} type="image/jpg" />
               <source srcSet={Img1x2w} type="image/webp" />
-              <img src={Img1j} alt="people" />
+              <img src={Img1j} alt="meeting" />
             </picture>
           </ItemImage>
           <ItemImage>
@@ -65,7 +65,7 @@ const Cases = () => {
               <source srcSet={Img2w} type="image/webp" />
               <source srcSet={Img2x2j} type="image/jpg" />
               <source srcSet={Img2x2w} type="image/webp" />
-              <img src={Img2j} alt="people" />
+              <img src={Img2j} alt="note" />
             </picture>
           </ItemImage>
           <ItemImage>
@@ -74,7 +74,7 @@ const Cases = () => {
               <source srcSet={Img3w} type="image/webp" />
               <source srcSet={Img3x2j} type="image/jpg" />
               <source srcSet={Img3x2w} type="image/webp" />
-              <img src={Img3j} alt="people" />
+              <img src={Img3j} alt="agreed" />
             </picture>
           </ItemImage>
           <ItemImage>
@@ -83,7 +83,7 @@ const Cases = () => {
               <source srcSet={Img4w} type="image/webp" />
               <source srcSet={Img4x2j} type="image/jpg" />
               <source srcSet={Img4x2w} type="image/webp" />
-              <img src={Img4j} alt="people" />
+              <img src={Img4j} alt="together" />
             </picture>
           </ItemImage>
           <ItemImage>
@@ -92,7 +92,7 @@ const Cases = () => {
               <source srcSet={Img5w} type="image/webp" />
               <source srcSet={Img5x2j} type="image/jpg" />
               <source srcSet={Img5x2w} type="image/webp" />
-              <img src={Img5j} alt="people" />
+              <img src={Img5j} alt="work" />
             </picture>
           </ItemImage>
           <ItemImage>
@@ -101,7 +101,7 @@ const Cases = () => {
               <source srcSet={Img6w} type="image/webp" />
               <source srcSet={Img6x2j} type="image/jpg" />
               <source srcSet={Img6x2w} type="image/webp" />
-              <img src={Img6j} alt="people" />
+              <img src={Img6j} alt="buildings" />
             </picture>
           </ItemImage>
         </ListImages>

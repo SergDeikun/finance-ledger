@@ -3,28 +3,29 @@ import styled from 'styled-components';
 import { ContainerWrapper } from '../Container/Container.styled';
 
 export const Section = styled.section`
-  background-color: ${p => p.theme.colors.green};
+  background-color: ${p => p.theme.colors.blue};
 `;
 
 export const Container = styled(ContainerWrapper)`
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: row-reverse;
   }
 `;
 
 export const Wrapper = styled.div`
-  padding: 79px 21px 79px 20px;
+  padding: 48px 20px 58px 20px;
 
   @media screen and (min-width: 768px) {
-    padding: 62px 32px;
+    padding: 59px 32px;
   }
 
   @media screen and (min-width: 1360px) {
-    padding: 80px 28px 86px 20px;
+    padding: 80px 20px 80px 28px;
   }
 `;
 
-export const PreTitle = styled.p`
+export const Date = styled.p`
   font-family: ${p => p.theme.font.body};
   font-size: ${p => p.theme.fontSize[0]}px;
   font-weight: ${p => p.theme.fontWeight.regular};
@@ -47,10 +48,10 @@ export const Title = styled.h2`
   color: ${p => p.theme.colors.whiteFont};
   margin-top: 16px;
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSize[7]}px;
     line-height: 1.2;
-  }
+  } */
 `;
 
 export const Text = styled.p`
@@ -79,13 +80,13 @@ export const Button = styled.button`
   font-style: normal;
   line-height: 1.38;
   color: ${p => p.theme.colors.whiteFont};
-  background-color: ${p => p.theme.colors.green};
+  background-color: ${p => p.theme.colors.blue};
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    border: 1px solid #28a745;
+    border: 1px solid #0284d0;
     background-color: ${p => p.theme.colors.whiteFont};
-    color: ${p => p.theme.colors.green};
+    color: ${p => p.theme.colors.blue};
   }
 
   @media screen and (min-width: 768px) {
