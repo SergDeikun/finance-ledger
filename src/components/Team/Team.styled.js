@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  padding: 56px 20px 40px 20px;
+  padding: 72px 20px 0 20px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    padding: 48px 32px 40px 32px;
+    padding: 50px 32px 88px 28px;
   }
 
   @media screen and (min-width: 1360px) {
@@ -22,8 +22,8 @@ export const PreTitle = styled.p`
   color: ${p => p.theme.colors.blackFont};
 
   @media screen and (min-width: 768px) {
-    font-size: ${p => p.theme.fontSize[1]}px;
-    line-height: 1.38;
+    font-size: ${p => p.theme.fontSize[2]}px;
+    line-height: 1.65;
   }
 `;
 
@@ -38,7 +38,7 @@ export const Title = styled.h2`
 
   @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSize[7]}px;
-    line-height: 1.2;
+    line-height: 1.35;
   }
 `;
 
@@ -57,32 +57,50 @@ export const Text = styled.p`
   }
 `;
 
-export const ListImages = styled.ul`
-  margin-top: 31px;
+export const TeamList = styled.ul`
+  margin-top: 63px;
 
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 148px);
-    gap: 18px;
+    grid-template-rows: repeat(1, 148px);
+    grid-column-gap: 18px;
+
+    margin-top: 24px;
   }
 
   @media screen and (min-width: 1360px) {
-    grid-template-rows: repeat(2, 282px);
+    grid-column-gap: 21px;
+    margin-top: 36px;
   }
 `;
 
-export const ItemImage = styled.li`
-  overflow: hidden;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+export const TeamItem = styled.li`
+  text-align: center;
 
-  :hover {
-    opacity: 0.7;
-  }
   @media screen and (max-width: 767px) {
     &:not(:first-child) {
-      margin-top: 8px;
+      margin-top: 30px;
     }
   }
+`;
+
+export const Name = styled.h3`
+  font-family: ${p => p.theme.font.body};
+  font-size: ${p => p.theme.fontSize[2]}px;
+  font-weight: ${p => p.theme.fontWeight.regular};
+  font-style: normal;
+  line-height: 1.35;
+  color: ${p => p.theme.colors.blackFont};
+  margin-top: 16px;
+`;
+
+export const Position = styled.p`
+  font-family: ${p => p.theme.font.body};
+  font-size: ${p => p.theme.fontSize[0]}px;
+  font-weight: ${p => p.theme.fontWeight.regular};
+  font-style: normal;
+  line-height: 1.38;
+  color: ${p => p.theme.colors.blackFont};
+  margin-top: 8px;
 `;
