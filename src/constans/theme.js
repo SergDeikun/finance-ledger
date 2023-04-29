@@ -25,7 +25,7 @@ export const theme = {
 // font-style: normal;
 // line-height: 1.36;
 
-// color: ${p => p.theme.colors.white}
+//color: ${p => p.theme.colors.whiteFont}
 // margin-left
 //margin-top
 
