@@ -31,6 +31,11 @@ export const PreTitle = styled.p`
   font-style: normal;
   line-height: 1.38;
   color: ${p => p.theme.colors.whiteFont};
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSize[1]}px;
+    line-height: 1.38;
+  }
 `;
 
 export const Title = styled.h2`
@@ -41,6 +46,11 @@ export const Title = styled.h2`
   line-height: 1.38;
   color: ${p => p.theme.colors.whiteFont};
   margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSize[7]}px;
+    line-height: 1.2;
+  }
 `;
 
 export const Text = styled.p`
@@ -51,6 +61,11 @@ export const Text = styled.p`
   line-height: 1.38;
   color: ${p => p.theme.colors.whiteFont};
   margin-top: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSize[1]}px;
+    line-height: 1.39;
+  }
 `;
 
 export const Button = styled.button`
@@ -71,5 +86,9 @@ export const Button = styled.button`
     border: 1px solid #28a745;
     background-color: ${p => p.theme.colors.whiteFont};
     color: ${p => p.theme.colors.green};
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSize[1]}px;
   }
 `;
