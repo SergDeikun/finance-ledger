@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   padding: 51px 20px 25px;
-  background-color: #f4f4f4;
 `;
 
 export const Title = styled.h2`
@@ -11,5 +10,9 @@ export const Title = styled.h2`
   font-weight: ${p => p.theme.fontWeight.regular};
   font-style: normal;
   line-height: 1.5;
-  color: ${p => p.theme.colors.whiteFont};
+  color: ${p => p.theme.colors.blackFont};
+`;
+
+export const Wrapper = styled.div`
+  background-color: #f4f4f4;
 `;

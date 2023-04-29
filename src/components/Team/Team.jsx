@@ -22,6 +22,7 @@ import {
   Text,
   TeamList,
   TeamItem,
+  Picture,
   Name,
   Position,
 } from './Team.styled';
@@ -39,35 +40,36 @@ const Team = () => {
 
         <TeamList>
           <TeamItem>
-            <picture>
+            <Picture>
               <source srcSet={Img1j} type="image/jpg" />
               <source srcSet={Img1w} type="image/webp" />
               <source srcSet={Img1x2j} type="image/jpg" />
               <source srcSet={Img1x2w} type="image/webp" />
               <img src={Img1j} alt="President" />
-            </picture>
+            </Picture>
+
             <Name>John Doe</Name>
             <Position>President</Position>
           </TeamItem>
           <TeamItem>
-            <picture>
+            <Picture>
               <source srcSet={Img2j} type="image/jpg" />
               <source srcSet={Img2w} type="image/webp" />
               <source srcSet={Img2x2j} type="image/jpg" />
               <source srcSet={Img2x2w} type="image/webp" />
               <img src={Img2j} alt="Vice President" />
-            </picture>
+            </Picture>
             <Name>Jane Doe</Name>
             <Position>Vice President</Position>
           </TeamItem>
           <TeamItem>
-            <picture>
+            <Picture>
               <source srcSet={Img3j} type="image/jpg" />
               <source srcSet={Img3w} type="image/webp" />
               <source srcSet={Img3x2j} type="image/jpg" />
               <source srcSet={Img3x2w} type="image/webp" />
               <img src={Img3j} alt="Marketing Head" />
-            </picture>
+            </Picture>
             <Name>Steve Smith</Name>
             <Position>Marketing Head</Position>
           </TeamItem>

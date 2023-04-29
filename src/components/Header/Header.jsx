@@ -1,7 +1,7 @@
+import Container from 'components/Container/Container';
 import Logo from '../Logo/Logo';
 
 import {
-  Container,
   HeaderBox,
   Navigation,
   NavList,
@@ -13,8 +13,9 @@ const Header = () => {
   return (
     <HeaderBox id="home">
       <Container>
-        <Logo />
         <Navigation>
+          <Logo />
+
           <NavList>
             <NavItem>
               <NavLink href="#home">Home</NavLink>

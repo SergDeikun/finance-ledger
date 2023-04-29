@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+import { ReactComponent as LIcon } from '../../images/icons/logoIcon.svg';
+
+export const Link = styled.a`
   display: flex;
   align-items: center;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -9,6 +11,12 @@ export const Wrapper = styled.div`
     transform: scale(1.02);
     filter: brightness(1.1);
   }
+`;
+
+export const LogoIcon = styled(LIcon)`
+  width: 39px;
+  height: 35px;
+  fill: ${p => p.theme.colors.green};
 `;
 
 export const LogoText = styled.p`

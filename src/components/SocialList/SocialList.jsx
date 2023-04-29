@@ -1,15 +1,10 @@
-import FacebookIcon from '../../images/icons/facebook.svg';
-import TwitterIcon from '../../images/icons/twitter.svg';
-import YouTubeIcon from '../../images/icons/youtube.svg';
-import LinkEdinIcon from '../../images/icons/linkedin.svg';
-
 import {
   List,
   Item,
-  FbIcon,
-  TwIcon,
-  YoIcon,
-  LiIcon,
+  FacebookIcon,
+  TwitterIcon,
+  YouTubeIcon,
+  LinkEdinIcon,
 } from './SocialList.styled';
 
 const SocialList = () => {
@@ -22,7 +17,7 @@ const SocialList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FbIcon src={FacebookIcon} alt="Facebook" />
+            <FacebookIcon />
           </a>
         </Item>
         <Item>
@@ -31,7 +26,7 @@ const SocialList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TwIcon src={TwitterIcon} alt="Twitter" />
+            <TwitterIcon />
           </a>
         </Item>
         <Item>
@@ -40,7 +35,7 @@ const SocialList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <YoIcon src={YouTubeIcon} alt="YouTube" />
+            <YouTubeIcon />
           </a>
         </Item>
         <Item>
@@ -49,7 +44,7 @@ const SocialList = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LiIcon src={LinkEdinIcon} alt="LinkEdin" />
+            <LinkEdinIcon />
           </a>
         </Item>
       </List>

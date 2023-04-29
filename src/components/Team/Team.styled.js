@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import SocialList from 'components/SocialList/SocialList';
+
 export const Section = styled.section`
   padding: 72px 20px 0 20px;
   text-align: center;
@@ -76,6 +78,7 @@ export const TeamList = styled.ul`
 `;
 
 export const TeamItem = styled.li`
+  position: relative;
   text-align: center;
 
   @media screen and (max-width: 767px) {
@@ -84,6 +87,20 @@ export const TeamItem = styled.li`
     }
   }
 `;
+
+export const Picture = styled.picture`
+  img {
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover img {
+    transform: scale(1.02);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    filter: brightness(0.6);
+  }
+`;
+
+export const Hover = styled(SocialList);
 
 export const Name = styled.h3`
   font-family: ${p => p.theme.font.body};

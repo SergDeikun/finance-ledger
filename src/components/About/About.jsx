@@ -1,13 +1,11 @@
-// import Container from 'components/Container/Container';
-
 import ImgJpg from '../../images/home/people.jpg';
 import ImgWebp from '../../images/home/people.webp';
 import ImgRetinaJpg from '../../images/home/people@2x.jpg';
 import ImgRetinaWebp from '../../images/home/people@2x.webp';
 
 import {
-  Section,
   Container,
+  Image,
   Wrapper,
   PreTitle,
   Title,
@@ -17,14 +15,14 @@ import {
 
 const About = () => {
   return (
-    <Section id="about">
+    <section id="about">
       <Container>
         <picture>
           <source srcSet={ImgJpg} type="image/jpg" />
           <source srcSet={ImgWebp} type="image/webp" />
           <source srcSet={ImgRetinaJpg} type="image/jpg" />
           <source srcSet={ImgRetinaWebp} type="image/webp" />
-          <img src={ImgJpg} alt="people" />
+          <Image src={ImgJpg} alt="people" />
         </picture>
         <Wrapper>
           <PreTitle>What you are looking for</PreTitle>
@@ -38,7 +36,7 @@ const About = () => {
           <Button type="button">Read More</Button>
         </Wrapper>
       </Container>
-    </Section>
+    </section>
   );
 };
 

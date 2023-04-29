@@ -2,25 +2,39 @@ import styled from 'styled-components';
 
 import { ContainerWrapper } from '../Container/Container.styled';
 
-export const Section = styled.section`
-  background-color: ${p => p.theme.colors.blue};
-`;
-
 export const Container = styled(ContainerWrapper)`
+  /* background-color: ${p => p.theme.colors.blue}; */
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
   }
 `;
 
-export const Wrapper = styled.div`
-  padding: 48px 20px 58px 20px;
+export const Image = styled.img`
+  height: 100%;
+  object-fit: cover;
 
   @media screen and (min-width: 768px) {
+    width: 368px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 670px;
+  }
+`;
+
+export const Wrapper = styled.div`
+  padding: 48px 20px 58px 20px;
+  background-color: ${p => p.theme.colors.blue};
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
     padding: 59px 32px;
   }
 
   @media screen and (min-width: 1360px) {
+    width: 690px;
     padding: 80px 20px 80px 28px;
   }
 `;
