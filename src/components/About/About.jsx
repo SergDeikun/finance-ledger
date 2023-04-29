@@ -1,9 +1,9 @@
 // import Container from 'components/Container/Container';
 
-import ImgJpg from '../../images/img/home/people.jpg';
-import ImgWebp from '../../images/img/home/people.webp';
-import ImgRetinaJpg from '../../images/img/home/people@2x.jpg';
-import ImgRetinaWebp from '../../images/img/home/people@2x.webp';
+import ImgJpg from '../../images/home/people.jpg';
+import ImgWebp from '../../images/home/people.webp';
+import ImgRetinaJpg from '../../images/home/people@2x.jpg';
+import ImgRetinaWebp from '../../images/home/people@2x.webp';
 
 import {
   Section,
@@ -17,7 +17,7 @@ import {
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <picture>
           <source srcSet={ImgJpg} type="image/jpg" />

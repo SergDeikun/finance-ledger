@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import ImgJpg from '../../images/img/home/showcase.jpg';
-import ImgWebp from '../../images/img/home/showcase.webp';
-import ImgRetinaJpg from '../../images/img/home/showcase@2x.jpg';
-import ImgRetinaWebp from '../../images/img/home/showcase@2x.webp';
+import ImgJpg from '../../images/home/showcase.jpg';
+import ImgWebp from '../../images/home/showcase.webp';
+import ImgRetinaJpg from '../../images/home/showcase@2x.jpg';
+import ImgRetinaWebp from '../../images/home/showcase@2x.webp';
 
 export const Section = styled.section`
   padding-top: 284px;
