@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
-import SocialList from 'components/SocialList/SocialList';
-
 export const Section = styled.section`
-  padding: 72px 20px 0 20px;
+  padding: 72px 20px 50px 20px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    padding: 50px 32px 88px 28px;
+    padding: 50px 32px 40px 32px;
   }
 
   @media screen and (min-width: 1360px) {
-    padding: 80px 28px;
+    padding: 80px 28px 88px 28px;
   }
 `;
 
@@ -65,7 +63,7 @@ export const TeamList = styled.ul`
   @media screen and (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 148px);
+    grid-template-rows: repeat(1);
     grid-column-gap: 18px;
 
     margin-top: 24px;
@@ -78,7 +76,7 @@ export const TeamList = styled.ul`
 `;
 
 export const TeamItem = styled.li`
-  position: relative;
+  /* position: relative; */
   text-align: center;
 
   @media screen and (max-width: 767px) {
@@ -100,7 +98,11 @@ export const Picture = styled.picture`
   }
 `;
 
-export const Hover = styled(SocialList);
+export const Img = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+`;
 
 export const Name = styled.h3`
   font-family: ${p => p.theme.font.body};

@@ -1,18 +1,38 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
-  padding: 51px 20px 25px;
+export const Box = styled.div`
+  max-width: 100%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    height: 454px;
+  }
 `;
 
-export const Title = styled.h2`
-  font-family: ${p => p.theme.font.body};
-  font-size: ${p => p.theme.fontSize[5]}px;
-  font-weight: ${p => p.theme.fontWeight.regular};
-  font-style: normal;
-  line-height: 1.5;
-  color: ${p => p.theme.colors.blackFont};
+export const Img = styled.img`
+  height: 100%;
+  object-fit: cover;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 670px;
+  }
 `;
 
-export const Wrapper = styled.div`
+export const WrapperForm = styled.div`
+  padding: 51px 20px 25px 20px;
   background-color: #f4f4f4;
+
+  @media screen and (min-width: 768px) {
+    /* padding: 32px 9px 33px 32px; */
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    padding: 56px 28px 77px 20px;
+    width: 690px;
+  }
 `;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderBox = styled.header`
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%;
   height: 120px;

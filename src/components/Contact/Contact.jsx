@@ -1,37 +1,31 @@
 import Container from 'components/Container/Container';
-
+import FormS from 'components/Form/Form';
 import ImgJpg from '../../images/home/contact.jpg';
 import ImgWebp from '../../images/home/contact.webp';
 import ImgRetinaJpg from '../../images/home/contact@2x.jpg';
 import ImgRetinaWebp from '../../images/home/contact@2x.webp';
 
-import { Section, Title, Wrapper } from './Contact.styled';
+import { Box, Img, WrapperForm } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <Section>
+    <section>
       <Container>
-        <picture>
-          <source srcSet={ImgJpg} type="image/jpg" />
-          <source srcSet={ImgWebp} type="image/webp" />
-          <source srcSet={ImgRetinaJpg} type="image/jpg" />
-          <source srcSet={ImgRetinaWebp} type="image/webp" />
-          <img src={ImgJpg} alt="people" />
-        </picture>
-        <Wrapper>
-          <Title>Request Callback</Title>
-          <form action="">
-            <label htmlFor="">
-              <input type="text" />
-            </label>
-            <label htmlFor="">
-              <input type="text" />
-            </label>
-            <button type="submit">Send</button>
-          </form>
-        </Wrapper>
+        <Box>
+          <picture>
+            <source srcSet={ImgJpg} type="image/jpg" />
+            <source srcSet={ImgWebp} type="image/webp" />
+            <source srcSet={ImgRetinaJpg} type="image/jpg" />
+            <source srcSet={ImgRetinaWebp} type="image/webp" />
+            <Img src={ImgJpg} alt="men" />
+          </picture>
+
+          <WrapperForm>
+            <FormS />
+          </WrapperForm>
+        </Box>
       </Container>
-    </Section>
+    </section>
   );
 };
 
