@@ -89,8 +89,15 @@ export const ItemImage = styled.li`
 `;
 
 export const ModalWindov = styled(Modal)`
-  width: 600px;
-  height: 600px;
+  padding: 0;
+  height: 310px;
+  width: 300px;
+  background-color: rgb(6, 11, 16);
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    height: 600px;
+  }
 `;
 
 export const LightboxImg = styled.img`
@@ -171,4 +178,5 @@ export const PreloaderWrap = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: rgb(6, 11, 16);
 `;
