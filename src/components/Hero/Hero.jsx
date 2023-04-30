@@ -5,7 +5,7 @@ import { Section, Title, HeroText, HeroBtn, IconBtn } from './Hero.styled';
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <Title>The Sky Is The Limit</Title>
         <HeroText>We provide world class financial assistance</HeroText>

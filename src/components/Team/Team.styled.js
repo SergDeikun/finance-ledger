@@ -76,7 +76,7 @@ export const TeamList = styled.ul`
 `;
 
 export const TeamItem = styled.li`
-  /* position: relative; */
+  position: relative;
   text-align: center;
 
   @media screen and (max-width: 767px) {

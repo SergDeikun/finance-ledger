@@ -86,3 +86,75 @@ export const ItemImage = styled.li`
     }
   }
 `;
+
+export const LighthouseImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+export const PrevButton = styled.button`
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    opacity: 0;
+  }
+`;
+export const PrevBtnWrap = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+
+  &:hover {
+    button {
+      opacity: 1;
+    }
+  }
+`;
+
+export const NextButton = styled.button`
+  position: absolute;
+  right: 0;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    opacity: 0;
+  }
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+`;
+
+export const NextBtnWrap = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100%;
+
+  &:hover {
+    button {
+      opacity: 1;
+    }
+  }
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: -40px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;

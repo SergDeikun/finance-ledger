@@ -9,7 +9,7 @@ import { Box, Img, WrapperForm } from './Contact.styled';
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <Container>
         <Box>
           <picture>

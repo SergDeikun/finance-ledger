@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as yup from 'yup';
 
 import Modal from 'components/Modal/Modal';
+import Worning from 'components/Worning/Worning';
 import { ReactComponent as WorningIcon } from '../../images/icons/worning.svg';
 
 import { Title, FormBox, FieldWrapper, Field, Button } from './Form.styled';
@@ -28,12 +29,13 @@ const FormS = () => {
 
   const formik = useFormik({
     initialValues: {
-      name: 'asdasd',
-      email: 'qweq@mail.com',
+      name: '',
+      email: '',
     },
     validationSchema: validationSchema,
     onSubmit: values => {
       setIsopen(true);
+      formik.resetForm();
     },
   });
 
@@ -74,7 +76,7 @@ const FormS = () => {
 
         <Button type="submit">Sent</Button>
       </FormBox>
-      {isOpen && <Modal onClose={handleModalClose} />}
+      {isOpen && <Worning onClose={handleModalClose} />}
     </div>
   );
 };

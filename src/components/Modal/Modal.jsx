@@ -1,27 +1,13 @@
 import { createPortal } from 'react-dom';
 
-import {
-  Backdrop,
-  ModalWindow,
-  Title,
-  Text,
-  BackBtn,
-  IconBack,
-} from './Modal.styled';
+import { Backdrop, ModalWindow } from './Modal.styled';
 
 const modalRoot = document.querySelector('#modal-root');
 
-const Modal = ({ onClose }) => {
+const Modal = ({ onClose, children }) => {
   return createPortal(
     <Backdrop>
-      <ModalWindow>
-        <Title>Thank you!</Title>
-        <Text>Your form submission received</Text>
-        <BackBtn onClick={onClose}>
-          <IconBack />
-          Back to your site
-        </BackBtn>
-      </ModalWindow>
+      <ModalWindow>{children}</ModalWindow>
     </Backdrop>,
     modalRoot
   );

@@ -1,4 +1,7 @@
+import { useState } from 'react';
+
 import Container from 'components/Container/Container';
+import SocialList from 'components/SocialList/SocialList';
 // 1
 import Img1j from '../../images/team/person1.jpg';
 import Img1w from '../../images/team/person1.webp';
@@ -29,6 +32,16 @@ import {
 } from './Team.styled';
 
 const Team = () => {
+  const [isHover, setIsHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHover(false);
+  };
+
   return (
     <Section>
       <Container>
@@ -40,36 +53,50 @@ const Team = () => {
         </Text>
 
         <TeamList>
-          <TeamItem>
-            <Picture>
-              <source srcSet={Img1j} type="image/jpg" />
-              <source srcSet={Img1w} type="image/webp" />
-              <source srcSet={Img1x2j} type="image/jpg" />
-              <source srcSet={Img1x2w} type="image/webp" />
-              <Img src={Img1j} alt="President" />
-            </Picture>
+          <TeamItem
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            {/* 1 */}
+            <div>
+              <Picture>
+                <source srcSet={Img1j} type="image/jpg" />
+                <source srcSet={Img1w} type="image/webp" />
+                <source srcSet={Img1x2j} type="image/jpg" />
+                <source srcSet={Img1x2w} type="image/webp" />
+                <Img src={Img1j} alt="President" />
+              </Picture>
+            </div>
+            {/* {isHover && <SocialList onMouseEnter={handleMouseEnter} />} */}
             <Name>John Doe</Name>
             <Position>President</Position>
           </TeamItem>
+          {/* 2 */}
           <TeamItem>
-            <Picture>
-              <source srcSet={Img2j} type="image/jpg" />
-              <source srcSet={Img2w} type="image/webp" />
-              <source srcSet={Img2x2j} type="image/jpg" />
-              <source srcSet={Img2x2w} type="image/webp" />
-              <Img src={Img2j} alt="Vice President" />
-            </Picture>
+            <div>
+              <Picture>
+                <source srcSet={Img2j} type="image/jpg" />
+                <source srcSet={Img2w} type="image/webp" />
+                <source srcSet={Img2x2j} type="image/jpg" />
+                <source srcSet={Img2x2w} type="image/webp" />
+                <Img src={Img2j} alt="Vice President" />
+              </Picture>
+            </div>
             <Name>Jane Doe</Name>
             <Position>Vice President</Position>
           </TeamItem>
+          {/* 3 */}
           <TeamItem>
-            <Picture>
-              <source srcSet={Img3j} type="image/jpg" />
-              <source srcSet={Img3w} type="image/webp" />
-              <source srcSet={Img3x2j} type="image/jpg" />
-              <source srcSet={Img3x2w} type="image/webp" />
-              <Img src={Img3j} alt="Marketing Head" />
-            </Picture>
+            <div>
+              <Picture>
+                <source srcSet={Img3j} type="image/jpg" />
+                <source srcSet={Img3w} type="image/webp" />
+                <source srcSet={Img3x2j} type="image/jpg" />
+                <source srcSet={Img3x2w} type="image/webp" />
+                <Img src={Img3j} alt="Marketing Head" />
+              </Picture>
+            </div>
+
             <Name>Steve Smith</Name>
             <Position>Marketing Head</Position>
           </TeamItem>

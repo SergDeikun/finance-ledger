@@ -31,7 +31,7 @@ const Header = () => {
   const opacity = scroll < 70 ? 0 : 0.8;
 
   return (
-    <HeaderBox id="home" opacity={opacity}>
+    <HeaderBox opacity={opacity}>
       <Container>
         <Navigation>
           <Logo />

@@ -9,8 +9,14 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   /*  */
-  /* background-color: black;
-  position: absolute; */
+  /* background-color: grey; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  filter: brightness(0.6); */
 `;
 
 export const Item = styled.li`
