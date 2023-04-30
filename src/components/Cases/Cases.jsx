@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useCallback } from 'react';
 
 import { dataImg } from 'constans/dataImg';
 
 import Container from 'components/Container/Container';
-import Modal from 'components/Modal/Modal';
+// import Modal from 'components/Modal/Modal';
 
 import Prev from '../../images/gallery/prev.png';
 import Next from '../../images/gallery/next.png';
 import Close from '../../images/gallery/close.png';
+import Preloader from '../../images/gallery/loading.gif';
 
 import {
   Section,
@@ -16,33 +18,43 @@ import {
   Text,
   ListImages,
   ItemImage,
-  LighthouseImg,
+  ModalWindov,
+  LightboxImg,
   PrevBtnWrap,
   PrevButton,
   NextBtnWrap,
   NextButton,
   CloseButton,
+  PreloaderWrap,
 } from './Cases.styled';
 
 const Cases = () => {
   const [photoIndex, setPhotoIndex] = useState(null);
   const [photoURLs, setPhotoURLs] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleNext = () => {
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, [photoIndex]);
+
+  const handleNext = useCallback(() => {
     if (photoIndex === photoURLs.length - 1) {
       setPhotoIndex(0);
     } else {
       setPhotoIndex(photoIndex + 1);
     }
-  };
+  });
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (photoIndex === 0) {
       setPhotoIndex(photoURLs.length - 1);
     } else {
       setPhotoIndex(photoIndex - 1);
     }
-  };
+  });
 
   return (
     <Section id="cases">
@@ -77,14 +89,21 @@ const Cases = () => {
                   />
                 </picture>
                 {photoIndex !== null && (
-                  <Modal>
+                  <ModalWindov>
                     <PrevBtnWrap>
                       <PrevButton onClick={handlePrev}>
                         <img src={Prev} alt="next" />
                       </PrevButton>
                     </PrevBtnWrap>
 
-                    <LighthouseImg src={photoURLs[photoIndex]} alt="" />
+                    {isLoading ? (
+                      <PreloaderWrap>
+                        <img src={Preloader} alt="loader" />
+                      </PreloaderWrap>
+                    ) : (
+                      <LightboxImg src={photoURLs[photoIndex]} alt="" />
+                    )}
+
                     <NextBtnWrap>
                       <NextButton onClick={handleNext}>
                         <img src={Next} alt="next" />
@@ -96,7 +115,7 @@ const Cases = () => {
                     >
                       <img src={Close} alt="" />
                     </CloseButton>
-                  </Modal>
+                  </ModalWindov>
                 )}
               </ItemImage>
             );

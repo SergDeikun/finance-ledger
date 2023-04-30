@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
-import Modal from 'components/Modal/Modal';
+// import Modal from 'components/Modal/Modal';
 import Worning from 'components/Worning/Worning';
 import { ReactComponent as WorningIcon } from '../../images/icons/worning.svg';
 
-import { Title, FormBox, FieldWrapper, Field, Button } from './Form.styled';
+import { Title, FormBox, FieldWrapper, Field, Btn } from './Form.styled';
 
 const validationSchema = yup.object({
   name: yup.string('Enter your name').required('Name is required'),
@@ -20,7 +20,7 @@ const validationSchema = yup.object({
     ),
 });
 
-const FormS = () => {
+const Form = () => {
   const [isOpen, setIsopen] = useState(false);
 
   const handleModalClose = () => {
@@ -74,11 +74,11 @@ const FormS = () => {
           />
         </FieldWrapper>
 
-        <Button type="submit">Sent</Button>
+        <Btn type="submit" title="Sent" />
       </FormBox>
       {isOpen && <Worning onClose={handleModalClose} />}
     </div>
   );
 };
 
-export default FormS;
+export default Form;

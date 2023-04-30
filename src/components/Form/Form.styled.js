@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import TextField from '@mui/material/TextField';
+import Button from 'components/Button/Button';
 
 export const Title = styled.h2`
   font-family: ${p => p.theme.font.body};
@@ -51,20 +52,8 @@ export const Field = styled(TextField)`
   }
 `;
 
-export const Button = styled.button`
+export const Btn = styled(Button)`
   margin-top: 8px;
   padding: 16px 56px;
   border-radius: 5px;
-  border: none;
-  font-family: ${p => p.theme.font.body};
-  font-size: ${p => p.theme.fontSize[1]}px;
-  font-weight: ${p => p.theme.fontWeight.regular};
-  font-style: normal;
-  line-height: 1.39;
-  color: ${p => p.theme.colors.whiteFont};
-  background-color: ${p => p.theme.colors.green};
-
-  &:hover {
-    background-color: #2ebf4f;
-  }
 `;

@@ -27,6 +27,7 @@ export const ModalWindow = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* min-height: 500px; */
   width: 290px;
   padding: 10px;
   animation: ${openModal} 0.3s ease-in-out;

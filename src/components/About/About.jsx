@@ -10,7 +10,7 @@ import {
   PreTitle,
   Title,
   Text,
-  Button,
+  Btn,
 } from './About.styled';
 
 const About = () => {
@@ -33,7 +33,7 @@ const About = () => {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </Text>
-          <Button type="button">Read More</Button>
+          <Btn type="button" title="Read More" />
         </Wrapper>
       </Container>
     </section>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from 'components/Button/Button';
 
 import { ContainerWrapper } from '../Container/Container.styled';
 
@@ -81,19 +82,10 @@ export const Text = styled.p`
   }
 `;
 
-export const Button = styled.button`
-  margin-top: 24px;
-  padding: 16px 32px;
-  border-radius: 5px;
+export const Btn = styled(Button)`
   border: 1px solid #ffffff;
-  font-family: ${p => p.theme.font.body};
   font-size: ${p => p.theme.fontSize[0]}px;
-  font-weight: ${p => p.theme.fontWeight.regular};
-  font-style: normal;
   line-height: 1.38;
-  color: ${p => p.theme.colors.whiteFont};
-  background-color: ${p => p.theme.colors.green};
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     border: 1px solid #28a745;

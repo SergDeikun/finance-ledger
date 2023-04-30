@@ -1,5 +1,5 @@
 import Container from 'components/Container/Container';
-import FormS from 'components/Form/Form';
+import Form from 'components/Form/Form';
 import ImgJpg from '../../images/home/contact.jpg';
 import ImgWebp from '../../images/home/contact.webp';
 import ImgRetinaJpg from '../../images/home/contact@2x.jpg';
@@ -21,7 +21,7 @@ const Contact = () => {
           </picture>
 
           <WrapperForm>
-            <FormS />
+            <Form />
           </WrapperForm>
         </Box>
       </Container>

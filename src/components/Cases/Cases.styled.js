@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Modal from 'components/Modal/Modal';
 
 export const Section = styled.section`
   padding: 56px 20px 40px 20px;
@@ -87,9 +88,15 @@ export const ItemImage = styled.li`
   }
 `;
 
-export const LighthouseImg = styled.img`
+export const ModalWindov = styled(Modal)`
+  width: 600px;
+  height: 600px;
+`;
+
+export const LightboxImg = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
 `;
 
 export const PrevButton = styled.button`
@@ -157,4 +164,11 @@ export const CloseButton = styled.button`
   &:hover {
     opacity: 0.7;
   }
+`;
+
+export const PreloaderWrap = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;

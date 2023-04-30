@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Button from 'components/Button/Button';
+
 import ImgJpg from '../../images/home/showcase.jpg';
 import ImgWebp from '../../images/home/showcase.webp';
 import ImgRetinaJpg from '../../images/home/showcase@2x.jpg';
@@ -99,20 +101,20 @@ export const HeroText = styled.p`
   }
 `;
 
-export const HeroBtn = styled.button`
-  display: flex;
-  align-items: center;
-  margin-top: 24px;
+export const Btn = styled(Button)`
+  /* display: flex;
+  align-items: center; */
+  /* margin-top: 24px; */
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 32px;
-  border-radius: 5px;
-  border: none;
-  font-family: ${p => p.theme.font.body};
+  /* padding: 16px 32px; */
+  /* border-radius: 5px; */
+  /* border: none; */
+  /* font-family: ${p => p.theme.font.body};
   font-size: ${p => p.theme.fontSize[1]}px;
   font-weight: ${p => p.theme.fontWeight.regular};
   font-style: normal;
-  line-height: 1.39;
+  line-height: 1.39; */
   color: ${p => p.theme.colors.whiteFont};
   background-color: ${p => p.theme.colors.green};
 

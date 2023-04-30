@@ -4,14 +4,13 @@ import ImgRetinaJpg from '../../images/home/blog@2x.jpg';
 import ImgRetinaWebp from '../../images/home/blog@2x.webp';
 
 import {
-  Section,
   Container,
   Image,
   Wrapper,
   Date,
   Title,
   Text,
-  Button,
+  Btn,
 } from './Blog.styled';
 
 const Blog = () => {
@@ -34,7 +33,7 @@ const Blog = () => {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </Text>
-          <Button type="button">Read Our Blog</Button>
+          <Btn type="button" title="Read Our Blog" />
         </Wrapper>
       </Container>
     </section>
