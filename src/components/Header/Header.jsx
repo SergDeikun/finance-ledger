@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import Container from 'components/Container/Container';
 import Logo from '../Logo/Logo';
 
@@ -10,8 +12,26 @@ import {
 } from './Header.styled';
 
 const Header = () => {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+
+      setScroll(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const opacity = scroll < 70 ? 0 : 0.8;
+
   return (
-    <HeaderBox id="home">
+    <HeaderBox id="home" opacity={opacity}>
       <Container>
         <Navigation>
           <Logo />

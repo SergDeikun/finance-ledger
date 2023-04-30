@@ -1,24 +1,19 @@
 import styled from 'styled-components';
-// import { device } from '../../constans/theme';
 
 export const HeaderBox = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
+  height: 120px;
   display: flex;
   align-items: center;
-  /* height: 98px; */
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* padding: 22px 22px 0 22px; */
-`;
+  background-color: rgba(0, 0, 0, ${props => props.opacity});
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// export const Container = styled(ContainerWrapper)`
-//   /* padding: 22px 22px 0 22px; */
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     align-items: center;
-//   }
-// `;
+  @media screen and (min-width: 768px) {
+    height: 70px;
+  }
+`;
 
 export const Navigation = styled.nav`
   padding: 22px;
@@ -30,7 +25,7 @@ export const Navigation = styled.nav`
   }
 
   @media screen and (min-width: 1360px) {
-    padding: 32px 28px 0 28px;
+    padding: 32px 28px 32 28px;
   }
 `;
 

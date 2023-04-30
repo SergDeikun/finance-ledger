@@ -11,10 +11,4 @@ export const theme = {
     blackFont: '#333333',
     whiteFont: '#FFFFFF',
   },
-
-  media: {
-    mobile: '(min-with: 320px)',
-    tablet: '(min-with: 768px)',
-    desktop: '(min-with: 1360px)',
-  },
 };
