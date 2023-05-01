@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useCallback } from 'react';
 
 import { dataImg } from '../../constans/dataImg';
 
@@ -39,21 +38,21 @@ const Cases = () => {
     }, 1000);
   }, [photoIndex]);
 
-  const handleNext = useCallback(() => {
+  const handleNext = () => {
     if (photoIndex === photoURLs.length - 1) {
       setPhotoIndex(0);
     } else {
       setPhotoIndex(photoIndex + 1);
     }
-  });
+  };
 
-  const handlePrev = useCallback(() => {
+  const handlePrev = () => {
     if (photoIndex === 0) {
       setPhotoIndex(photoURLs.length - 1);
     } else {
       setPhotoIndex(photoIndex - 1);
     }
-  });
+  };
 
   return (
     <Section id="cases">
