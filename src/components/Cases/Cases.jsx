@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useCallback } from 'react';
 
-import { dataImg } from 'constans/dataImg';
+import { dataImg } from '../../constans/dataImg';
 
 import Container from 'components/Container/Container';
 // import Modal from 'components/Modal/Modal';
