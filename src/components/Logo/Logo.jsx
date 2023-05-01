@@ -1,10 +1,11 @@
-import { Link, LogoIcon, LogoText, GreenText } from './Logo.styled';
+import { Link, LogoBox, LogoText, GreenText } from './Logo.styled';
 
 const Logo = () => {
   return (
     <>
       <Link>
-        <LogoIcon />
+        <LogoBox></LogoBox>
+        {/* <LogoIcon /> */}
         <LogoText>
           <GreenText>Finance</GreenText> Ledger
         </LogoText>

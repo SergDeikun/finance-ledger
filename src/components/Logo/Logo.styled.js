@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { ReactComponent as LIcon } from '../../images/icons/logoIcon.svg';
+// import { ReactComponent as LIcon } from 'images/icons/logoIcon.svg';
+import LogoIc from 'images/icons/logo.svg';
 
 export const Link = styled.a`
   display: flex;
@@ -12,11 +13,21 @@ export const Link = styled.a`
   }
 `;
 
-export const LogoIcon = styled(LIcon)`
+export const LogoBox = styled.div`
+  background-image: url(${LogoIc});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 39px;
   height: 35px;
   fill: ${p => p.theme.colors.green};
 `;
+
+// export const LogoIcon = styled(LIcon)
+//   width: 39px;
+//   height: 35px;
+//   fill: ${p => p.theme.colors.green};
+// `;
 
 export const LogoText = styled.p`
   font-family: ${p => p.theme.font.body};

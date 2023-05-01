@@ -9,6 +9,9 @@ import Img2j from '../images/cases/cases3.jpg';
 import Img2w from '../images/cases/cases3.webp';
 import Img2x2j from '../images/cases/cases3@2x.jpg';
 import Img2x2w from '../images/cases/cases3@2x.webp';
+
+
+
 // 3
 import Img3j from '../images/cases/cases5.jpg';
 import Img3w from '../images/cases/cases5.webp';
