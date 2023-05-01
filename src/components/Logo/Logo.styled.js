@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 // import { ReactComponent as LIcon } from 'images/icons/logoIcon.svg';
-import LogoIc from 'images/icons/logo.svg';
+import LogoIc from '../../images/icons/logo.svg';
 
 export const Link = styled.a`
   display: flex;
