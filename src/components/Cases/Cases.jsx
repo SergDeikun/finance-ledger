@@ -3,8 +3,7 @@ import { useCallback } from 'react';
 
 import { dataImg } from '../../constans/dataImg';
 
-import Container from 'components/Container/Container';
-// import Modal from 'components/Modal/Modal';
+import Container from '../../components/Container/Container';
 
 import Prev from '../../images/gallery/prev.png';
 import Next from '../../images/gallery/next.png';
