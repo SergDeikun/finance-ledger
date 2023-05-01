@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-
-import LIcon from '../../images/icons/logoIcon.svg';
+import { ReactComponent as LIcon } from '../../images/icons/logoIcon.svg';
 
 export const Link = styled.a`
   display: flex;
