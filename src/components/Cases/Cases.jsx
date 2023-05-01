@@ -8,7 +8,7 @@ import Container from 'components/Container/Container';
 
 import Prev from '../../images/gallery/prev.png';
 import Next from '../../images/gallery/next.png';
-import Close from '../../images/gallery/close.png';
+import Close from 'images/gallery/close.png';
 import Preloader from '../../images/gallery/loading.gif';
 
 import {
