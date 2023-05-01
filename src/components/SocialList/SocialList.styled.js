@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { ReactComponent as FbIcon } from '../../images/icons/facebook.svg';
-import { ReactComponent as TwIcon } from '../../images/icons/twitter.svg';
-import { ReactComponent as YoIcon } from '../../images/icons/youtube.svg';
-import { ReactComponent as LiIcon } from '../../images/icons/linkedin.svg';
+import { ReactComponent as FbIcon } from 'images/icons/facebook.svg';
+import { ReactComponent as TwIcon } from 'images/icons/twitter.svg';
+import { ReactComponent as YoIcon } from 'images/icons/youtube.svg';
+import { ReactComponent as LiIcon } from 'images/icons/linkedin.svg';
 
 export const List = styled.ul`
   display: flex;
