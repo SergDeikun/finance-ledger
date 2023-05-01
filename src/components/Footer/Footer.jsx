@@ -1,5 +1,5 @@
-import Container from 'components/Container/Container';
-import SocialList from 'components/SocialList/SocialList';
+import Container from '../../components/Container/Container';
+import SocialList from '../../components/SocialList/SocialList';
 
 import { FooterBox, Text } from './Footer.styled';
 

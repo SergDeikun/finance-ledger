@@ -1,5 +1,4 @@
-import Container from 'components/Container/Container';
-import Button from 'components/Button/Button';
+import Container from '../../components/Container/Container';
 import NextIcon from '../../images/icons/fa-solid_angle-right.svg';
 
 import { Section, Title, HeroText, Btn, IconBtn } from './Hero.styled';
@@ -13,10 +12,6 @@ const Hero = () => {
         <Btn type="button" title="Read More">
           <IconBtn src={NextIcon} alt="icon" />
         </Btn>
-        {/* <HeroBtn type="button">
-          <IconBtn src={NextIcon} alt="icon" />
-          Read More
-        </HeroBtn> */}
       </Container>
     </Section>
   );

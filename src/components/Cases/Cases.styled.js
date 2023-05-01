@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Modal from 'components/Modal/Modal';
+import Modal from '../../components/Modal/Modal';
 
 export const Section = styled.section`
   padding: 56px 20px 40px 20px;

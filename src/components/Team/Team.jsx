@@ -1,7 +1,4 @@
-import { useState } from 'react';
-
-import Container from 'components/Container/Container';
-import SocialList from 'components/SocialList/SocialList';
+import Container from '../../components/Container/Container';
 // 1
 import Img1j from '../../images/team/person1.jpg';
 import Img1w from '../../images/team/person1.webp';
@@ -32,16 +29,6 @@ import {
 } from './Team.styled';
 
 const Team = () => {
-  const [isHover, setIsHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHover(false);
-  };
-
   return (
     <Section>
       <Container>
@@ -53,10 +40,7 @@ const Team = () => {
         </Text>
 
         <TeamList>
-          <TeamItem
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <TeamItem>
             {/* 1 */}
             <div>
               <Picture>

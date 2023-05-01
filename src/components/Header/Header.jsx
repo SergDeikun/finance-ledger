@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Container from 'components/Container/Container';
+import Container from '../Container/Container';
 import Logo from '../Logo/Logo';
 
 import {

@@ -1,5 +1,5 @@
-import Container from 'components/Container/Container';
-import Form from 'components/Form/Form';
+import Container from '../../components/Container/Container';
+import Form from '../../components/Form/Form';
 import ImgJpg from '../../images/home/contact.jpg';
 import ImgWebp from '../../images/home/contact.webp';
 import ImgRetinaJpg from '../../images/home/contact@2x.jpg';

@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 
-// import Modal from 'components/Modal/Modal';
-import Worning from 'components/Worning/Worning';
+import Worning from '../../components/Worning/Worning';
 import { ReactComponent as WorningIcon } from '../../images/icons/worning.svg';
 
 import { Title, FormBox, FieldWrapper, Field, Btn } from './Form.styled';
