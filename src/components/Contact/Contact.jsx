@@ -13,11 +13,11 @@ const Contact = () => {
       <Container>
         <Box>
           <picture>
-            <source srcSet={ImgJpg} type="image/jpg" />
-            <source srcSet={ImgWebp} type="image/webp" />
-            <source srcSet={ImgRetinaJpg} type="image/jpg" />
-            <source srcSet={ImgRetinaWebp} type="image/webp" />
-            <Img src={ImgJpg} alt="men" />
+            <source
+              type="image/webp"
+              srcSet={`${ImgWebp}  1x,  ${ImgRetinaWebp} 2x`}
+            />
+            <Img loading="lazy" alt="men" src={ImgJpg} srcSet={ImgRetinaJpg} />
           </picture>
 
           <WrapperForm>

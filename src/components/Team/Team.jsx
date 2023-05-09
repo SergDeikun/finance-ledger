@@ -22,7 +22,6 @@ import {
   Text,
   TeamList,
   TeamItem,
-  Picture,
   Img,
   Name,
   Position,
@@ -43,28 +42,37 @@ const Team = () => {
           <TeamItem>
             {/* 1 */}
             <div>
-              <Picture>
-                <source srcSet={Img1j} type="image/jpg" />
-                <source srcSet={Img1w} type="image/webp" />
-                <source srcSet={Img1x2j} type="image/jpg" />
-                <source srcSet={Img1x2w} type="image/webp" />
-                <Img src={Img1j} alt="President" />
-              </Picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`${Img1w}  1x,  ${Img1x2w} 2x`}
+                />
+                <Img
+                  loading="lazy"
+                  alt="John Doe"
+                  src={Img1j}
+                  srcSet={Img1x2j}
+                />
+              </picture>
             </div>
-            {/* {isHover && <SocialList onMouseEnter={handleMouseEnter} />} */}
             <Name>John Doe</Name>
             <Position>President</Position>
           </TeamItem>
           {/* 2 */}
           <TeamItem>
             <div>
-              <Picture>
-                <source srcSet={Img2j} type="image/jpg" />
-                <source srcSet={Img2w} type="image/webp" />
-                <source srcSet={Img2x2j} type="image/jpg" />
-                <source srcSet={Img2x2w} type="image/webp" />
-                <Img src={Img2j} alt="Vice President" />
-              </Picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`${Img2w}  1x,  ${Img2x2w} 2x`}
+                />
+                <Img
+                  loading="lazy"
+                  alt="Jane Doe"
+                  src={Img2j}
+                  srcSet={Img2x2j}
+                />
+              </picture>
             </div>
             <Name>Jane Doe</Name>
             <Position>Vice President</Position>
@@ -72,13 +80,18 @@ const Team = () => {
           {/* 3 */}
           <TeamItem>
             <div>
-              <Picture>
-                <source srcSet={Img3j} type="image/jpg" />
-                <source srcSet={Img3w} type="image/webp" />
-                <source srcSet={Img3x2j} type="image/jpg" />
-                <source srcSet={Img3x2w} type="image/webp" />
-                <Img src={Img3j} alt="Marketing Head" />
-              </Picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`${Img3w}  1x,  ${Img3x2w} 2x`}
+                />
+                <Img
+                  loading="lazy"
+                  alt="Steve Smith"
+                  src={Img3j}
+                  srcSet={Img3x2j}
+                />
+              </picture>
             </div>
 
             <Name>Steve Smith</Name>

@@ -88,13 +88,13 @@ export const TeamItem = styled.li`
 
 export const Picture = styled.picture`
   img {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   }
 
   &:hover img {
-    transform: scale(1.02);
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-    filter: brightness(0.6);
+    /* transform: scale(1.02); */
+    /* filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25)) brightness(0.6); */
+    /* filter: brightness(0.6); */
   }
 `;
 
@@ -102,6 +102,11 @@ export const Img = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25)) brightness(0.6);
+  }
 `;
 
 export const Name = styled.h3`

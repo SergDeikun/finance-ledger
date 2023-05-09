@@ -11,6 +11,7 @@ export const Box = styled.div`
 
 export const Img = styled.img`
   height: 100%;
+  width: 100%;
   object-fit: cover;
 
   @media screen and (min-width: 768px) {

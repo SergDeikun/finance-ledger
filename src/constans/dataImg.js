@@ -10,8 +10,6 @@ import Img2w from '../images/cases/cases3.webp';
 import Img2x2j from '../images/cases/cases3@2x.jpg';
 import Img2x2w from '../images/cases/cases3@2x.webp';
 
-
-
 // 3
 import Img3j from '../images/cases/cases5.jpg';
 import Img3w from '../images/cases/cases5.webp';
@@ -34,10 +32,53 @@ import Img6x2j from '../images/cases/cases4@2x.jpg';
 import Img6x2w from '../images/cases/cases4@2x.webp';
 
 export const dataImg = [
-  { id: 1, Img1j: Img1j, Img1w: Img1w, Img1x2j: Img1x2j, Img1x2w: Img1x2w },
-  { id: 2, Img1j: Img2j, Img1w: Img2w, Img1x2j: Img2x2j, Img1x2w: Img2x2w },
-  { id: 3, Img1j: Img3j, Img1w: Img3w, Img1x2j: Img3x2j, Img1x2w: Img3x2w },
-  { id: 4, Img1j: Img4j, Img1w: Img4w, Img1x2j: Img4x2j, Img1x2w: Img4x2w },
-  { id: 5, Img1j: Img5j, Img1w: Img5w, Img1x2j: Img5x2j, Img1x2w: Img5x2w },
-  { id: 6, Img1j: Img6j, Img1w: Img6w, Img1x2j: Img6x2j, Img1x2w: Img6x2w },
+  {
+    id: 1,
+    Img1j: Img1j,
+    Img1w: Img1w,
+    Img1x2j: Img1x2j,
+    Img1x2w: Img1x2w,
+    alt: 'meeting',
+  },
+  {
+    id: 2,
+    Img1j: Img2j,
+    Img1w: Img2w,
+    Img1x2j: Img2x2j,
+    Img1x2w: Img2x2w,
+    alt: 'analysis',
+  },
+
+  {
+    id: 3,
+    Img1j: Img3j,
+    Img1w: Img3w,
+    Img1x2j: Img3x2j,
+    Img1x2w: Img3x2w,
+    alt: 'compromise',
+  },
+  {
+    id: 4,
+    Img1j: Img4j,
+    Img1w: Img4w,
+    Img1x2j: Img4x2j,
+    Img1x2w: Img4x2w,
+    alt: 'team',
+  },
+  {
+    id: 5,
+    Img1j: Img5j,
+    Img1w: Img5w,
+    Img1x2j: Img5x2j,
+    Img1x2w: Img5x2w,
+    alt: 'work',
+  },
+  {
+    id: 6,
+    Img1j: Img6j,
+    Img1w: Img6w,
+    Img1x2j: Img6x2j,
+    Img1x2w: Img6x2w,
+    alt: 'buildings',
+  },
 ];

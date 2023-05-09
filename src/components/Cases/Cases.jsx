@@ -64,22 +64,19 @@ const Cases = () => {
           sapiente!
         </Text>
         <ListImages>
-          {dataImg.map(({ id, Img1j, Img1w, Img1x2j, Img1x2w }, index) => {
+          {dataImg.map(({ id, Img1j, Img1w, Img1x2j, Img1x2w, alt }, index) => {
             return (
               <ItemImage key={id}>
                 <picture>
                   <source
-                    srcSet={`${Img1j} 1x,${Img1x2j} 2x`}
-                    type="image/jpg"
-                  />
-                  <source
-                    srcSet={`${Img1w} 1x,${Img1x2w} 2x`}
                     type="image/webp"
+                    srcSet={`${Img1w}  1x,  ${Img1x2w} 2x`}
                   />
-
                   <img
+                    loading="lazy"
+                    alt={alt}
                     src={Img1j}
-                    alt="meeting"
+                    srcSet={Img1x2j}
                     onClick={() => {
                       setPhotoIndex(index);
                       setPhotoURLs(dataImg.map(({ Img1j }) => Img1j));
@@ -90,7 +87,7 @@ const Cases = () => {
                   <ModalWindov>
                     <PrevBtnWrap>
                       <PrevButton onClick={handlePrev}>
-                        <img src={Prev} alt="next" />
+                        <img src={Prev} alt="prev" />
                       </PrevButton>
                     </PrevBtnWrap>
 
@@ -99,7 +96,7 @@ const Cases = () => {
                         <img src={Preloader} alt="loader" />
                       </PreloaderWrap>
                     ) : (
-                      <LightboxImg src={photoURLs[photoIndex]} alt="" />
+                      <LightboxImg src={photoURLs[photoIndex]} alt="bigPhoto" />
                     )}
 
                     <NextBtnWrap>
@@ -111,7 +108,7 @@ const Cases = () => {
                       type="butto"
                       onClick={() => setPhotoIndex(null)}
                     >
-                      <img src={Close} alt="" />
+                      <img src={Close} alt="close" />
                     </CloseButton>
                   </ModalWindov>
                 )}

@@ -18,11 +18,11 @@ const About = () => {
     <section id="about">
       <Container>
         <picture>
-          <source srcSet={ImgJpg} type="image/jpg" />
-          <source srcSet={ImgWebp} type="image/webp" />
-          <source srcSet={ImgRetinaJpg} type="image/jpg" />
-          <source srcSet={ImgRetinaWebp} type="image/webp" />
-          <Image src={ImgJpg} alt="people" />
+          <source
+            type="image/webp"
+            srcSet={`${ImgWebp}  1x,  ${ImgRetinaWebp} 2x`}
+          />
+          <Image loading="lazy" alt="team" src={ImgJpg} srcSet={ImgRetinaJpg} />
         </picture>
         <Wrapper>
           <PreTitle>What you are looking for</PreTitle>
