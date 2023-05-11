@@ -38,6 +38,7 @@ export const Field = styled(TextField)`
       font-size: ${p => p.theme.fontSize[1]}px;
     }
   }
+
   input {
     padding: 16px 8px;
     border: 1px solid #f5f5f5;
@@ -49,6 +50,13 @@ export const Field = styled(TextField)`
   p {
     display: flex;
     align-items: center;
+  }
+
+  legend {
+    span {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
   }
 `;
 
