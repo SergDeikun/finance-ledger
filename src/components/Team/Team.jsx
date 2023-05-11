@@ -22,9 +22,11 @@ import {
   Text,
   TeamList,
   TeamItem,
+  ThumbImg,
   Img,
   Name,
   Position,
+  SocialIcons,
 } from './Team.styled';
 
 const Team = () => {
@@ -41,7 +43,7 @@ const Team = () => {
         <TeamList>
           <TeamItem>
             {/* 1 */}
-            <div>
+            <ThumbImg>
               <picture>
                 <source
                   type="image/webp"
@@ -54,13 +56,14 @@ const Team = () => {
                   srcSet={Img1x2j}
                 />
               </picture>
-            </div>
+              <SocialIcons />
+            </ThumbImg>
             <Name>John Doe</Name>
             <Position>President</Position>
           </TeamItem>
           {/* 2 */}
           <TeamItem>
-            <div>
+            <ThumbImg>
               <picture>
                 <source
                   type="image/webp"
@@ -73,13 +76,14 @@ const Team = () => {
                   srcSet={Img2x2j}
                 />
               </picture>
-            </div>
+              <SocialIcons />
+            </ThumbImg>
             <Name>Jane Doe</Name>
             <Position>Vice President</Position>
           </TeamItem>
           {/* 3 */}
           <TeamItem>
-            <div>
+            <ThumbImg>
               <picture>
                 <source
                   type="image/webp"
@@ -92,7 +96,8 @@ const Team = () => {
                   srcSet={Img3x2j}
                 />
               </picture>
-            </div>
+              <SocialIcons />
+            </ThumbImg>
 
             <Name>Steve Smith</Name>
             <Position>Marketing Head</Position>

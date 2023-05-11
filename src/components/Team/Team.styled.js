@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SocialList from 'components/SocialList/SocialList';
 
 export const Section = styled.section`
   padding: 72px 20px 50px 20px;
@@ -86,16 +87,8 @@ export const TeamItem = styled.li`
   }
 `;
 
-export const Picture = styled.picture`
-  img {
-    /* transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  }
-
-  &:hover img {
-    /* transform: scale(1.02); */
-    /* filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25)) brightness(0.6); */
-    /* filter: brightness(0.6); */
-  }
+export const ThumbImg = styled.div`
+  position: relative;
 `;
 
 export const Img = styled.img`
@@ -104,7 +97,7 @@ export const Img = styled.img`
   object-fit: cover;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
+  ${ThumbImg}:hover & {
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25)) brightness(0.6);
   }
 `;
@@ -127,4 +120,20 @@ export const Position = styled.p`
   line-height: 1.38;
   color: ${p => p.theme.colors.blackFont};
   margin-top: 8px;
+`;
+
+export const SocialIcons = styled(SocialList)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  opacity: 0;
+
+  ${ThumbImg}:hover & {
+    opacity: 1;
+  }
 `;

@@ -96,7 +96,7 @@ export const ModalWindov = styled(Modal)`
 
   @media screen and (min-width: 768px) {
     width: 600px;
-    height: 600px;
+    height: 500px;
   }
 `;
 

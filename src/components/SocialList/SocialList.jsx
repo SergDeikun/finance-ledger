@@ -1,51 +1,52 @@
 import {
   List,
   Item,
+  LinkItem,
   FacebookIcon,
   TwitterIcon,
   YouTubeIcon,
   LinkEdinIcon,
 } from './SocialList.styled';
 
-const SocialList = () => {
+const SocialList = ({ className }) => {
   return (
     <>
-      <List>
+      <List className={className || ''}>
         <Item>
-          <a
+          <LinkItem
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FacebookIcon />
-          </a>
+          </LinkItem>
         </Item>
         <Item>
-          <a
+          <LinkItem
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <TwitterIcon />
-          </a>
+          </LinkItem>
         </Item>
         <Item>
-          <a
+          <LinkItem
             href="https://www.youtube.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <YouTubeIcon />
-          </a>
+          </LinkItem>
         </Item>
         <Item>
-          <a
+          <LinkItem
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <LinkEdinIcon />
-          </a>
+          </LinkItem>
         </Item>
       </List>
     </>

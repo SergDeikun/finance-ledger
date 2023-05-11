@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import SocialList from 'components/SocialList/SocialList';
 
 export const FooterBox = styled.footer`
   padding: 20px 30px 20px 34px;
@@ -19,5 +20,12 @@ export const Text = styled.p`
     font-size: ${p => p.theme.fontSize[1]}px;
     line-height: 1.39;
     margin-top: 10px;
+  }
+`;
+
+export const SocialListIcon = styled(SocialList)`
+  a:hover svg {
+    opacity: 1;
+    fill: green;
   }
 `;
